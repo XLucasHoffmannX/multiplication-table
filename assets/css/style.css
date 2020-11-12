@@ -1,0 +1,108 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header{
+    width: 100%;
+    margin-top: -6rem;
+    margin-bottom: .5rem;
+    color: white;
+}
+header h2{
+    font-size: 5rem;
+}
+header small{
+    font-size: 1.5rem;
+}
+
+.config-display, .inputs-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: up 1s;
+}
+
+.config-display{
+    align-items: center;
+    width: min(95vw, 540px);
+    height: min(75vh, 540px);
+    border-radius: 10px;
+    box-shadow: 5px 12px 15px rgba(0,0,0,0.5);
+    background-color: #fff;
+}
+.inputs-table{
+    width: 95%;
+    height: 95%;
+    padding: 1rem;
+}
+.inputs-table label{
+    font-size: 18px;
+    text-align: left;
+}
+.inputs-table input{
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    background-color: #d6d6d6;
+    padding-left: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.opt-view, .continue-btn{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.opt-view{
+    margin-top: .5rem;
+    background-color: var(--background);
+    border-radius: 5px;
+    height: 30px;
+}
+.options-display{
+    margin-top: .5rem;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    padding: .8rem;
+    animation: up 0.8s;
+}
+.options-display label{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+.options-display input{
+    width: 50%;
+    text-align: center;
+    background-color: #9c9a9a;
+}
+.continue-btn{
+    margin-top: 2rem;
+    height: 5rem;
+    font-size: 20px;
+    background-color: #0AF744;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+}
+.continue-btn:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.arrowDown{
+    transform: rotate(180deg);
+}
+.view{
+    display: none;
+}
+.error-input{
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 2rem;
+    font-weight: 600;
+}
